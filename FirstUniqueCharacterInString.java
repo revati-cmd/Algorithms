@@ -6,10 +6,10 @@ class Solution {
            // hMap.put(currentChar, hMap.getOrDefault(currentChar,-2)+1)
             
             if(hMap.containsKey(currentChar)) {
-                hMap.put(currentChar, -1); //unique char
+                hMap.put(currentChar, -1); //not unique char
             }
             else {
-                hMap.put(currentChar, i); //not unique
+                hMap.put(currentChar, i); //unique char
             }
         }
         for(int i=0; i<s.length();i++)
